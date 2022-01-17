@@ -445,9 +445,7 @@ body{
       .col-two video{
             width: 100%;
       }
-      .text-button{
-          
-      }
+
       .btn1{
             width: 250px;
       }
@@ -499,9 +497,6 @@ body{
         .col-two video {
               width: 100%;
         }
-
-        .text-button {}
-
         .btn1 {
               width: 250px;
         }
@@ -535,9 +530,7 @@ body{
       }
 }
 @media only screen and (max-width: 628px) {
-      .col-two-buttons{
-            
-      }
+
       .btn1 {
             width: 40%;
             height: 50px;
