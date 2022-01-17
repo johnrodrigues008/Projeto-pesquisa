@@ -1,6 +1,7 @@
 /*Estilo geral da fonte*/
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Moon+Dance&display=swap');
 /*Estilo geral*/
 *{
       box-sizing: border-box;
@@ -18,34 +19,74 @@ body{
       padding: 0;
       
 }
+
 .container-fluid {
       background: rgb(2, 0, 36);
       background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(187, 210, 192, 1) 100%);
-      height: 80px;
+      height: 140px;
+
       
 }
 .logo{
-      width: 185px;
-      margin: 0 0 0 10% ;
+      width: 150px;
+      margin: 0 0 0 100px ;
+      padding: 0;
 }
+/*          text enfase louro       */
+.box-louro{
+      height: 20vh;
+      
+}
+.container-louro{
+      width: 100%;
+      margin: 0;
+      padding: 0;
+}
+.louro-text{
+      margin: 26px 0 0 0!important;
+      line-height: 25px;
+      margin: 0;
+      padding: 0;
+      height: 40vh;
+     
+     
+}
+.louro-left,
+.louro-right{
+      width: 20%;
+     height: 100%;
+
+     margin: 0;
+     padding: 0;
+      
+}
+.louro-left img{
+      width: 70%;
+      
+}
+.louro-right img {
+      width: 70%;
+      
+}
+
 /* Box Principal */
 .box-start{
      
       width: 100%;
-      height: 100vh;
+      height: 120vh;
 
 }
 .box-colums{
-      margin: 80px 100px;
+      margin: 0px 100px;
       
       
 }
 /* col-one */
 .col-one {
-      height: 80vh;
+      height: 100vh;
 }
 .col-one h1{
-      margin-top: 90px;
+      margin-top: 200px;
       font-weight: 700;
       font-size: 45px;
 }
@@ -66,7 +107,7 @@ body{
       border-radius: 5px;
 }
 .col-two-buttons{
-      margin-top: 50px;
+      margin-top: 20px;
       text-align: center;
 }
 .btn1{
@@ -122,7 +163,7 @@ body{
 .box-testimonial{
       text-align: center;
       padding: 20px;
-      height: 105vh;
+      height: 120vh;
 }
 .box-testimonial h1{
       font-size: 48px;
@@ -232,6 +273,16 @@ body{
       }
 
 }
+@media only screen and (max-width: 1170px){
+      .col-one h1 {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+      }
+      .col-one h6{
+            margin-top: 20px;
+      }
+}
 @media only screen and (max-width: 1170px) {
       /*Estilo do header*/
       .navbar a{
@@ -249,10 +300,7 @@ body{
       .row{
             display: block;
       }
-      .box-colums {
-            margin: 0;
-
-      }
+      
       .br{
             display: none;
       }
@@ -285,9 +333,21 @@ body{
             width: 35%;
             height: 50px;
       }
+      /*          text enfase louro       */
+    
+      .box-louro {
+            display: none;   
+      }
+
+      /*-------------------------------------------
+                Arrumar essa parte ainda
+      -------------------------------------------*/
+
+
+
       /*            box dos metodos               */
       .box-method {
-            margin: 350px 0 0  0;
+            margin-top:  0;
             padding: 0;
             display: block;
             width: 100%;
@@ -318,9 +378,37 @@ body{
             text-align: left;
             margin: 10px 0 0 10%;
       }
+      .col-two video{
+            margin-top: 50px;
+      }
+      .box-colums{
+            margin: 0 10px;
+      }
+
+
+
 }
 @media only screen and (max-width: 900px){
+      /*            box do video                  */
+      .col-two video{
+            width: 100%;
+      }
+      .text-button{
+          
+      }
+      .btn1{
+            width: 250px;
+      }
+      .btn2{
+            width: 250px;
+      }
+
+
+
       /*            box dos metodos               */
+       .box-colums {
+             margin: 0 50px;
+       }
        .box-colums-method {
              height: 100vh;
        }
@@ -355,6 +443,20 @@ body{
       }
 }
 @media only screen and (max-width: 726px){
+        /*            box do video                  */
+        .col-two video {
+              width: 100%;
+        }
+
+        .text-button {}
+
+        .btn1 {
+              width: 250px;
+        }
+
+        .btn2 {
+              width: 250px;
+        }
             /*          Box Testimonial       */
             .testimonial-btn1 {
                   text-align: center;
@@ -363,6 +465,10 @@ body{
 
             .testimonial-btn2 {
                  margin-top: 30px;
+            }
+            .box-testimonial{
+                  height: 150vh!important;
+                  
             }
 }
 @media only screen and (max-width: 700px) {
@@ -488,12 +594,15 @@ body{
             width: 70%;
       }
 }
+@media only screen and (max-width: 502px){
+
+}
 @media only screen and (max-width: 446px) {
             /* Box Principal */
             .box-start {
                   
                   width: 100%;
-                  height: 80vh;
+                  height: 100vh;
 
             }
             .col-two-buttons {
@@ -514,14 +623,11 @@ body{
              .col-two-method img {
                    width: 90%;
              }
-
-            /*          Box Testimonial       */
-            
-            .box-colums-method {
-                 
-                  
-                
+            /*          box method        */
+            .box-method{
+                  height: 130vh;
             }
+            /*          Box Testimonial       */
             .col-two-method{
                   height: 30vh;
                  
@@ -537,6 +643,49 @@ body{
                 margin-top: 10px;
             }
 }
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 414px) {
+            /* Box Principal */
 
+            .box-start{
+                  height: 100vh;
+            }
+            .box-colums {
+                  margin: 0;  
+            }
+            .box-method {
+                  height: 125vh;
+            }
+            .box-testimonial {
+                  height: 100vh;
+            }
+}
+@media only screen and (max-width: 375px){
+      /* Box Principal */
+      .box-start{
+            height: 80vh;
+      }
+
+      .box-colums {
+            margin: 0;
+            
+
+
+      }
+      .box-method {
+            height: 100vh;
+      }
+      .box-testimonial {
+            height: 130vh !important;
+
+            
+      }
+}
+@media only screen and (max-width: 334px) {
+      .box-testimonial{
+            margin: 0;
+      }
+      .button {
+            width: 100%!important;
+
+      }
 }
