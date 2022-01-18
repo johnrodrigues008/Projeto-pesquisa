@@ -830,7 +830,7 @@ body{
 }
 @media only screen and (max-width: 416px) {
       .box-start{
-            height: 110vh!important;
+            height: 150vh!important;
       }
       .mobile-louro{
             height: 160px;
@@ -864,7 +864,7 @@ body{
             /* Box Principal */
 
             .box-start{
-                  height: 100vh;
+                  height: 80vh!important;
             }
             .box-start h1{
                   margin-top: 0px!important;
@@ -872,12 +872,60 @@ body{
             .box-colums {
                   margin: 0;  
             }
+            .page-section{
+                  height: 120vh!important;
+            }
             .box-method {
-                  height: 125vh;
+                  height: 75vh!important;
             }
             .box-testimonial {
-                  height: 100vh;
+                  height: 85vh!important;
             }
+}
+
+@media only screen and (max-width: 393px) {
+      /* Box Principal */
+
+      .box-start{
+            height: 80vh!important;
+      }
+      .box-start h1{
+            margin-top: 0px!important;
+      }
+      .box-colums {
+            margin: 0;  
+      }
+      .page-section{
+            height: 130vh!important;
+      }
+      .box-method {
+            height: 75vh!important;
+      }
+      .box-testimonial {
+            height: 95vh!important;
+      }
+}
+@media only screen and (max-width: 390px) {
+      /* Box Principal */
+
+      .box-start{
+            height: 80vh!important;
+      }
+      .box-start h1{
+            margin-top: 0px!important;
+      }
+      .box-colums {
+            margin: 0;  
+      }
+      .page-section{
+            height: 130vh!important;
+      }
+      .box-method {
+            height: 75vh!important;
+      }
+      .box-testimonial {
+            height: 95vh!important;
+      }
 }
 @media only screen and (max-width: 375px){
       /* Box Principal */
@@ -951,6 +999,30 @@ body{
             padding-top: 0!important;
       }
 }
+@media only screen and (max-width: 360px) {
+      /* Box Principal */
+
+      .box-start{
+            height: 90vh!important;
+      }
+      .box-start h1{
+            margin-top: 0px!important;
+      }
+      .box-colums {
+            margin: 0;  
+      }
+      .page-section{
+            height: 150vh!important;
+      }
+      .box-method {
+            height: 90vh!important;
+      }
+      .box-testimonial {
+            height: 110vh!important;
+      }
+}
+
+
 @media only screen and (max-width: 334px) {
       /* box louro */
       .Box-louro-mobile{
