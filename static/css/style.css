@@ -432,7 +432,7 @@ body{
            
       }
       .page-section{
-            height: 200vh;
+            height: 180vh;
             background: rgba(2, 0, 36, 0.308);
             background: linear-gradient(90deg, rgb(2, 0, 36) 0%, rgba(187, 210, 192, 1) 100%);
            
@@ -763,7 +763,7 @@ body{
                   height: 30vh;
                  
             }
-          
+           
             .testimonial-btn1 {
                   text-align: center;
                   margin: 0;
@@ -851,6 +851,12 @@ body{
      
       .col-two .video-louro{
             margin-top: 260px;            
+      }
+      .box-method{
+            height: 100vh!important;
+      }
+      .page-section{
+            padding-top: 0;
       }
     
 }
