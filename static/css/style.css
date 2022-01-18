@@ -16,16 +16,12 @@ body{
 /*Estilo do header*/
 .navbar{
       margin: 0;
-      padding: 0;
-      
+      padding: 0; 
 }
-
 .container-fluid {
       background: rgb(2, 0, 36);
       background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(187, 210, 192, 1) 100%);
-      height: 140px;
-
-      
+      height: 140px;   
 }
 .logo{
       width: 150px;
@@ -73,13 +69,11 @@ body{
 .box-start{
      
       width: 100%;
-      height: 120vh;
+      height: 100vh;
 
 }
 .box-colums{
-      margin: 0px 100px;
-      
-      
+      margin: 0px 100px;     
 }
 /* col-one */
 .col-one {
@@ -141,9 +135,9 @@ body{
 
 /*            box dos metodos               */
 .box-method{
-       background: rgb(2, 0, 36);
-       background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(187, 210, 192, 1) 100%);
-      height: 110vh;
+      background: rgb(2, 0, 36);
+      background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(187, 210, 192, 1) 100%);
+      height: 100vh;
       display: block;
 }
 .box-colums-method{
@@ -217,10 +211,9 @@ body{
       color: white;
 }
 .page-section{
-      height: 110vh;
+      height: 100vh;
       background: rgba(2, 0, 36, 0.308);
       background: linear-gradient(90deg, rgb(2, 0, 36) 0%, rgba(187, 210, 192, 1) 100%);
-     
 }
 .page-section h1{
       text-align: center;
@@ -229,25 +222,8 @@ body{
 }
 .card-service{
       background: white;
-      box-shadow: 0 0 1em rgb(255, 255, 255);
+      box-shadow: 0 0 1em rgba(255, 255, 255, 0.589);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*          Footer          */
 .container-footer {
       background: #1D1D1D;
@@ -273,8 +249,6 @@ body{
       border-radius: 20px;
       text-decoration: none;
       color: white;
-
-
 }
 .footer-icons svg:hover{
       background: #292e49;
@@ -285,11 +259,9 @@ body{
 .footer-autor:hover{
       color: white;
 }
-
-
-
-
-
+.email-mobile{
+      display: none;
+}
 @media only screen and (max-width: 1308px){
       .col-one-method h1 {
             font-size: 3vw;
@@ -341,7 +313,7 @@ body{
             height: 10px;
       }
       .col-one h1 {
-             margin-top: 50px;
+            margin-top: 0;
             text-align: center;
             font-size: 3.5vw;
       }
@@ -365,7 +337,7 @@ body{
             height: 50px;
       }
       .box-start{
-            height: 150vh;
+            height: 120vh;
       }
       /*          text enfase louro       */
     
@@ -374,11 +346,8 @@ body{
       }
       /*           Louro mobile                */
       .mobile-louro{
-           
             text-align: center;
-           
             width: 100%;
-
       }
       .Box-louro-mobile{
             margin-top: 10px;
@@ -425,7 +394,7 @@ body{
             padding: 0;
             display: block;
             width: 100%;
-            height: 120vh;
+            height: 100vh;
       }
       .col-one-method h1 {
             padding: 100px 0 0 0;
@@ -463,14 +432,17 @@ body{
            
       }
       .page-section{
-            height: 180vh;
+            height: 200vh;
             background: rgba(2, 0, 36, 0.308);
             background: linear-gradient(90deg, rgb(2, 0, 36) 0%, rgba(187, 210, 192, 1) 100%);
            
       }
-
-
-
+      .email-mobile{
+            display: block;
+      }
+      .email-pc{
+            display: none;
+      }
 }
 @media only screen and (max-width: 900px){
       .box-start{
@@ -487,9 +459,6 @@ body{
       .btn2{
             width: 250px;
       }
-
-
-
       /*            box dos metodos               */
        .box-colums {
              margin: 0 50px;
@@ -523,35 +492,43 @@ body{
       /*Box do testimonial*/
       .box-testimonial {
             text-align: center;
-            padding: 20px;
-            height: 120vh;
+         
+      }
+      .footer-edit{
+            text-align: center;
+            width: 100%!;
+      }
+      .footer-icons p{
+            width: 100%;
+            text-align: center;
       }
 }
 @media only screen and (max-width: 726px){
-        /*            box do video                  */
-        .col-two video {
-              width: 100%;
-        }
-        .btn1 {
-              width: 250px;
-        }
+      /*            box do video                  */
+      .col-two video {
+            width: 100%;
+      }
+      .btn1 {
+            width: 250px;
+      }
 
-        .btn2 {
-              width: 250px;
-        }
-            /*          Box Testimonial       */
-            .testimonial-btn1 {
-                  text-align: center;
-                  
-            }
+      .btn2 {
+            width: 250px;
+      }
+      /*          Box Testimonial       */
+      .testimonial-btn1 {
+            text-align: center;
+            
+      }
 
-            .testimonial-btn2 {
-                 margin-top: 30px;
-            }
-            .box-testimonial{
-                  height: 150vh!important;
-                  
-            }
+      .testimonial-btn2 {
+            margin-top: 30px;
+      }
+      .box-testimonial{
+            height: 110vh!important;
+            
+      }
+      
 }
 @media only screen and (max-width: 700px) {
 .box-colums-method{
@@ -569,10 +546,8 @@ body{
       .btn1 {
             width: 40%;
             height: 50px;
-            margin: 0 5px 0 0;
-           
+            margin: 0 5px 0 0;  
       }
-
       .btn2 {
             width: 40%;
             height: 50px;
@@ -620,11 +595,11 @@ body{
 }
 @media only screen and (max-width: 554px) {
       .box-start{
-            height: 130vh;
+            height: 120vh!important;
     
       }
       .col-one h1 {
-            margin-top: 50px;
+            margin-top: 30px!important;
             text-align: center;
             font-size: 20px;
       }
@@ -641,10 +616,13 @@ body{
        .box-method {
              margin-top: 5vw;
        }
+       .box-testimonial{
+             height: 110vh!important;
+       }
 }
 @media only screen and (max-width: 550px) {
       .col-one h1 {
-            margin-top: 50px;
+            margin-top: 30px!important;
             text-align: center;
             font-size: 20px; 
       }
@@ -682,6 +660,9 @@ body{
 @media only screen and (max-width: 536px){
       .box-start{
             height: 130vh;
+      }
+      .box-start h1{
+            margin-top: 10px!important;
       }
       /*          text enfase louro       */
     
@@ -739,14 +720,21 @@ body{
             margin: 0;
            padding: 0;
       }
+      .box-testimonial{
+            height: 130vh!important;
+      }
 }
 @media only screen and (max-width: 446px) {
             /* Box Principal */
             .box-start {
                   
                   width: 100%;
-                  height: 130vh;
+                  height: 110vh;
 
+            }
+            .col-one h1 {
+                  margin-top: 10px;
+                 
             }
             .col-two-buttons {
                   margin-top: 50px;
@@ -768,13 +756,14 @@ body{
              }
             /*          box method        */
             .box-method{
-                  height: 130vh;
+                  height: 103vh;
             }
             /*          Box Testimonial       */
             .col-two-method{
                   height: 30vh;
                  
             }
+          
             .testimonial-btn1 {
                   text-align: center;
                   margin: 0;
@@ -785,6 +774,14 @@ body{
                 margin: 0;
                 margin-top: 10px;
             }
+            .page-section{
+                  height: 190vh;
+                  padding-top: none;                 
+            }
+            .page-section h1{
+                  margin: 50px;
+            }
+            
 }
 @media only screen and (max-width: 436px){
       .louro-mobile-boxImg1{
@@ -827,6 +824,9 @@ body{
       .col-one h6{
             margin-top: 0px;
       }
+      .box-testimonial{
+            height: 130vh!important;
+      }
 }
 @media only screen and (max-width: 416px) {
       .box-start{
@@ -852,12 +852,16 @@ body{
       .col-two .video-louro{
             margin-top: 260px;            
       }
+    
 }
 @media only screen and (max-width: 414px) {
             /* Box Principal */
 
             .box-start{
                   height: 100vh;
+            }
+            .box-start h1{
+                  margin-top: 0px!important;
             }
             .box-colums {
                   margin: 0;  
@@ -872,7 +876,10 @@ body{
 @media only screen and (max-width: 375px){
       /* Box Principal */
       .box-start{
-            height: 80vh;
+            height: 100vh!important;
+      }
+      .box-start h1{
+            margin-top: 0px!important;
       }
       .Box-louro-mobile{
             margin-top: 0px;
@@ -925,13 +932,17 @@ body{
       }
       /*  */
       .box-method {
-            height: 110vh;
+            height: 100vh!important;
       }
       .box-testimonial {
-            height: 130vh !important;   
+            height: 120vh !important;   
       }
       .col-one h6{
             margin-top: 0;  
+      }
+      .page-section{
+            height: 160vh!important;
+            padding-top: 0!important;
       }
 }
 @media only screen and (max-width: 334px) {
