@@ -4,7 +4,7 @@
       <meta charset="UTF-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>PESQUISAS AUTOMATIZADAS</title>
+      <title>teste</title>
 
       <!-- Link do CSS Bootstrap-->
       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
@@ -13,122 +13,451 @@
       <link rel="stylesheet" href="static/css/theme.css">
       <link rel="stylesheet" href="static/css/style.css">
 
+      <style>
+            /*Estilo geral da fonte*/
+            @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+
+            @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');            /* box principal */
+            /*Estilo geral*/
+            *{
+                  box-sizing: border-box;
+            }
+            body{
+                  width: 100%;
+                  height: 100%;
+                  margin: 0;
+                  padding: 0;
+                  background-color: #eeeeee3f;
+                  font-family: 'Montserrat',
+                  sans-serif; 
+            }
+            /*Estilo do header*/
+            .navbar{
+                  margin: 0;
+                  padding: 0; 
+            }
+            .container-fluid {
+                  background: rgb(2, 0, 36);
+                  background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(187, 210, 192, 1) 100%);
+                  height: 140px;   
+            }
+            .logo{
+                  width: 150px;
+                  margin: 0 0 0 100px ;
+                  padding: 0;
+            }
+            /* Box principal */
+            .box-principal{
+                  height: 100%;
+                  background: #eeeeee3f;
+                  margin: 0;
+                  padding: 0;
+            }
+            /* Box coluna da ,esquerda */
+            .fadeInUp h1{
+                  font-family: 'Montserrat',sans-serif; 
+                  text-align: left;
+                  margin: 0;
+                  padding: 0;
+                  font-weight: 700;
+                  font-size: 45px;
+                  color: rgba(0, 0, 0, 0.63);
+            }
+            .fadeInUp h6{
+                  margin-top: 80px;
+                  font-weight: 700;
+            }
+            /* box louro */
+            .box-louro{
+                  text-align: center;
+            }
+            .box-louro img{
+                  width: 80px;
+                  height: 200px;
+                  vertical-align: top;
+                  display: inline-block;  
+            }
+            .bloco-text-louro{
+                  display: inline-block;
+            }
+            .bloco-text-louro p{
+               text-align: center;
+               width: 350px;
+               height: 160px;
+               margin-top: 40px;
+               font-size: 18px;
+            }
+            .video-louro{
+                  width: 100%;  
+            }
+            .mobile-louro{
+                  display: none;
+            }
+/* --------------------------------------------------------------------------- */
+            /* Metodos */
+            .method{
+                  height: 100%;
+                  padding-bottom: 0;
+            }
+            .methodInUp{
+                  height: 80vh;
+            }
+            .methodInUp > .col .h1{
+                  font-size: 16px;
+                  color: rgb(255, 255, 255);
+            }
+            .methodInRight{
+
+                  height: 80vh;
+            }
+            .col-one-method h1{
+                  color: rgb(255, 255, 255);
+                  font-size: 43px;
+                  margin-top: 80px;
+                  margin-bottom: 20px;
+            }
+            .col-one-method p{
+                  color: rgb(255, 255, 255);
+            }
+/* --------------------------------------------------------------------------- */
+            /* Depoimentos */
+            .depoimentos{
+                  height: 100%;
+                  padding-top: 50px;
+                  padding-bottom: 200px;
+                  
+            }
+            .depoimentos h1{
+                  margin:  60px  60px ;
+                  padding-top: 0;
+                  font-weight: 700;
+                  font-size: 50px;
+            }
+/* --------------------------------------------------------------------------- */
+            /* <!-- Oferta --> */
+            .oferta{
+                  height: 100%;
+                  padding-bottom: 100px;
+                  
+            }
+            .oferta h1{
+                  margin:  60px 60px ;
+                  padding-top: 0;
+                  font-weight: 700;
+                  font-size: 50px;
+                  margin-bottom: 60px;
+            }
+            .oferta h6{
+                  margin-bottom: 40px;
+            }
+
+            @media only screen and (max-width: 1200px) {
+                  /* Box principal */
+                  .bloco-text-louro p{
+                        text-align: center;
+                        width: 280px;
+                        height: 160px;
+                        margin-top: 40px;
+                        font-size: 15px;
+                  }
+                  /* Metódos */
+                  .col-one-method h1{
+                        color: white;
+                        font-size: 30px;
+                        margin-top: 80px;
+                        margin-bottom: 20px;
+                  }
+            }
+            @media only screen and (max-width: 992px) {
+                  /* Box principal */
+                  .mobile-louro{
+                        display: block;
+                        height: 180px;
+                  }
+                  .desktop-box-louro{
+                      display: none;  
+                  }
+                  .br{
+                        display: none;
+                  }
+                  .fadeInUp{
+                        margin: 0;
+                        padding: 0;
+                  }
+                  .fadeInUp h1{
+                        text-align: center;
+                        font-size: 30px;
+                  }
+                  .fadeInUp h6{
+                        text-align: center;
+                        margin-top: 20px;
+                        padding: 0;
+                  }
+                  /* Metódos */
+                  .page-section {
+                        padding-top: 0;
+                        padding-bottom: 0;
+                  }
+                  .methodInUp{  
+                        height: 50%;
+                  }
+                  .methodInRight{
+                        height: 5%!important;
+                        text-align: center;
+                      
+                  }
+                  .methodInRight img{
+                        width: 60%;    
+                  }
+            
+                  .depoimentos{
+                  height: 100%;
+                  }
+                  .depoimentos h1{
+                        margin:  50px 0 20px 0;
+                  
+                        font-size: 40px;
+                  }
+                  /* Ofertas */
+                        .oferta h1{
+                        margin:  60px 60px ;
+                        padding-top: 0;
+                        font-weight: 700;
+                        font-size: 40px;
+                        margin-bottom: 60px;
+                  }
+                  .oferta h6{
+                        text-align: left;
+                        margin: 20px;
+                  }
+
+            }
+            @media only screen and (max-width: 720px){
+                  .oferta-btn1{
+                        margin: 20px;
+                  }
+            }
+            @media only screen and (max-width: 527px) {
+                  /* Box principal */
+                  .col-two-buttons{
+                        text-align: center;
+                        width: 100%;
+                        align-items: center;
+                  }
+                  .btn1,.btn2{
+                        padding: 0;
+                        margin: 0;
+                        width: 80%;
+                        margin-bottom: 10px;
+                  }
+
+            }
+            @media only screen and (max-width: 474px) {
+
+                  /* Box principal */
+                  .box-louro{
+                        text-align: center;
+                        height: 150px;
+                  }
+                  .box-louro img{
+                        width: 70px;
+                        height: 180px;
+                        vertical-align: top;
+                        display: inline-block;     
+                  }
+                  .bloco-text-louro{
+                        display: inline-block;
+                  }
+                  .bloco-text-louro p{
+                  text-align: center;
+                  width: 210px;
+                  height: 160px;
+                  margin-top: 40px;
+                  font-size: 12px;
+                  }
+                  .fadeInUp h1{
+                        text-align: center;
+                        font-size: 25px;
+                  }
+           
+            }
+            @media only screen and (max-width: 386px){
+                  /* Box principal */
+                  .box-louro{
+                        text-align: center;
+                        height: 150px;
+                  }
+                  .box-louro img{
+                        width: 60px;
+                        height: 150px;
+                        vertical-align: top;
+                        display: inline-block;   
+                  }
+                  .bloco-text-louro{
+                        display: inline-block;
+                  }
+                  .bloco-text-louro p{
+                        text-align: center;
+                        width: 210px;
+                        height: 160px;
+                        margin-top: 40px;
+                        font-size: 11px;
+                  }
+                  .fadeInUp h1{
+                        text-align: center;
+                        font-size: 18px;
+                  }
+             
+            }
+            @media only screen and (max-width: 386px){
+            /* Box principal */
+            .box-louro{
+                  text-align: center;
+                  height: 140px;
+            }
+            .box-louro img{
+                  width: 50px;
+                  height: 140px;
+                  vertical-align: top;
+                  display: inline-block;    
+            }
+            .fadeInUp h1{
+                  text-align: center;
+                  font-size: 18px;
+            }
+            .fadeInUp h6{
+                  text-align: center;
+                  font-size: 14px;
+            }
+            .bloco-text-louro p{
+                  text-align: center;
+                  width: 180px;
+                  height: 160px;
+                  margin-top: 30px;
+                  font-size: 10px;
+                  }
+            }
+            @media only screen and (max-width: 314px){
+                  /* Box principal */
+                  .box-louro{
+                        display: none;
+                  }
+            }
+                  
+            
+
+      </style>
 </head>
 <body>
       <!-- header -->
       <nav class="navbar">
             <div class="container-fluid">
                   <a class="navbar-brand" href="#">
-                        <img class="logo" src="static/media/SER USADO/1-07.png" alt="">
+                        <img class="logo" src="static/media/1-07.png" alt="">
                   </a>
             </div>
       </nav>
-      
-      <!-- Box Principal -->
-      <section class="box-start">
-            <div class="row align-items-start box-colums">
-                  <div class="col col-one">
-                        <div class="mobile-louro">
-                              <div class="Box-louro-mobile">
-                                    <div class="louro-mobile-boxImg1">
-                                          <img src="static/media/SER USADO/direita.png" alt="">
-                                    </div>
-                                    <div class="louro-mobile-boxText">
-                                          <p><span>"</span> Nossa empresa de pesquisa ficou em nono lugar em nível de precisão entre mais de 140 empresas de pesquisa que registraram pesquisa eleitoral nas <br><strong>eleições municipais de 2020</strong> <span>"</span></p>
-                                    </div>
-                                    <div class="louro-mobile-boxImg2">
-                                          <img src="static/media/SER USADO/esquerda.png" alt="">
-                                    </div>
+      <!-- Principal -->
+      <div class="page-section box-principal" >
+            <div class="container">
+                  <div class="row align-items-center">
+                        <div class="box-louro mobile-louro">
+                              <img src="static/media/direita.png" alt="figura louro">
+                              <div class="bloco-text-louro">
+                                    <p>"Nossa empresa de pesquisa ficou em nono lugar em nível de precisão entre mais de 140 empresas de pesquisa que registraram pesquisa eleitoral nas <br><strong>eleições municipais de 2020</strong>"</p>
                               </div>
+                              <img src="static/media/esquerda.png" alt="figura louro">
                         </div>
-                        <h1>PESQUISA <br class="br"> AUTOMATIZADA POR <br class="br">TELEFONE</h1>
-                        <h6>
-                              VEJA A EXPLICAÇÃO NO VÍDEO 
-                              <svg xmlns="http://www.w3.org/2000/svg" width="30" height="20" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
-                              <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
-                              </svg>
-                        </h6>
-                  </div>
-                  <div class="col col-two">
-                        <div class="box-louro">
-                              <div class="container container-louro">
-                                    <div class="row align-items-start">
-                                          <div class="louro-left left">
-                                                <img src="static/media/SER USADO/direita.png" alt="">
-                                          </div>
-                                          <div class="col louro-text">
-                                                "Nossa empresa de pesquisa ficou em nono lugar em nível de precisão entre mais de 140 empresas de pesquisa que registraram pesquisa eleitoral nas <br><strong>eleições municipais de 2020</strong> "
-                                          </div>
-                                          <div class="louro-right">
-                                                <img src="static/media/SER USADO/esquerda.png" alt="">
-                                          </div>
+                        <div class="col-lg-6 py-3 wow fadeInUp">
+                              <h1>PESQUISA <br class="br"> AUTOMATIZADA POR <br class="br">TELEFONE</h1>
+                              <h6>
+                                    VEJA A EXPLICAÇÃO NO VÍDEO 
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="20" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                                    <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+                                    </svg>
+                              </h6>  
+                        </div>
+                        <div class="col-lg-6 py-3 wow fadeInRight">
+                              <div class="box-louro desktop-box-louro">
+                                    <img src="static/media/direita.png" alt="figura louro">
+                                    <div class="bloco-text-louro">
+                                          <p>"Nossa empresa de pesquisa ficou em nono lugar em nível de precisão entre mais de 140 empresas de pesquisa que registraram pesquisa eleitoral nas <br><strong>eleições municipais de 2020</strong>"</p>
                                     </div>
+                                    <img src="static/media/esquerda.png" alt="figura louro">
                               </div>
-                        </div>       
-                        <video class="video-louro" src="static/media/SER USADO/New(720P_HD).mp4" type="720P_HD" controls></video>
-                        <div class="col-two-buttons">
-                              <a class="text-button"  href="https://api.whatsapp.com/send?phone=557193003009"
-                              target="_blank">
-                                    <button type="button" class="btn btn-info btn1">
-                                          QUERO UMA PESQUISA
-                                    </button>
-                              </a>
-                              <a class="text-button"   href="https://api.whatsapp.com/send?phone=557193003009"
-                              target="_blank">
-                                    <button type="button" class="btn btn-info btn2">
-                                          MAIS INFORMAÇÕES
-                                          
-                                    </button>
-                              </a>
+                              <video class="video-louro" src="static/media/New(720P_HD).mp4" type="720P_HD" controls></video>
+                              <div class="col-two-buttons">
+                                    <a class="text-button"  href="https://api.whatsapp.com/send?phone=557193003009"
+                                    target="_blank">
+                                          <button type="button" class="btn btn-info btn1">
+                                                QUERO UMA PESQUISA
+                                          </button>
+                                    </a>
+                                    <a class="text-button"   href="https://api.whatsapp.com/send?phone=557193003009"
+                                    target="_blank">
+                                          <button type="button" class="btn btn-info btn2">
+                                                MAIS INFORMAÇÕES       
+                                          </button>
+                                    </a>
+                              </div>
+                              
+
+
+
+                              
                         </div>
                   </div>
-            </div>
-      </section>
-      
-      <!--Box dos metodos-->
-      <section class="box-method">
-            <div class="row align-items-start  box-colums-method">
-                  <div class="col col-one-method">
-                        <h1>MÉTODO DE<br class="br"> PESQUISA CONFIÁVEL <br class="br">E PRECISO</h1>
-                        <p>
-                              Nessa pesquisa você tem acesso a pessoas que jamais teria em entrevistas presenciais e a ponderação paramétrica corrige qualquer distorção, deixando o resultado idêntico ao perfil do eleitor do município, estado, ou país. Mesmo metodologia usada pelo Datapoder 360 e Datafolha (pesquisas por telefone).
-                        </p>
+            </div> <!-- .container -->
+      </div> 
+      <!-- Method -->
+      <div class="page-section method">
+            <div class="container">
+                  <div class="row align-items-center">
+                        <div class="col-lg-6 py-3 wow fadeInUp methodInUp">
+                              <!--  -->
+                              <div class="col col-one-method">
+                                    <h1>MÉTODO DE<br class="br"> PESQUISA CONFIÁVEL <br class="br">E PRECISO</h1>
+                                    <p>
+                                          Nessa pesquisa você tem acesso a pessoas que jamais teria em entrevistas presenciais e a ponderação paramétrica corrige qualquer distorção, deixando o resultado idêntico ao perfil do eleitor do município, estado, ou país. Mesmo metodologia usada pelo Datapoder 360 e Datafolha (pesquisas por telefone).
+                                    </p>
+                              </div>
+                        </div>
+                        <div class="col-lg-6 py-3 wow fadeInRight methodInRight">
+                              <img src="static/media/robotTWo.096643d4.svg" alt="">
+                           
+                        </div>
                   </div>
-                  <div class="col col-two-method">
-                        <img src="static/media/SER USADO/robotTWo.096643d4.svg" alt="">
-                  </div>
-            </div>
-      </section>
-       <!-- Depoimentos page section -->
-       <div class="page-section">
+            </div> 
+      </div> 
+      <!-- Depoimentos page section -->
+      <div class="page-section depoimentos">
             <h1>Depoimentos</h1>
             <div class="container page-container">
                   <div class="row row-container">
                         <div class="col-lg-4">
                               <div class="card-service">
-                              
-                              <div class="body">
-                              <h5 class="text-secondary">Angelo Almeida, Deputado Estadual da Bahia.</h5>
-                              <p>"Fiz dezenas de pesquisas nas eleições de 2020 com a Numen Data e me surpreendi com a capacidade de associar qualidade com preços baixos." </p>
-                              </div>
-                              </div>
-                        </div>
-                        <div class="col-lg-4">
-                              <div class="card-service">
-                              
                                     <div class="body">
-                                    <h5 class="text-secondary">Antônio Henrique Jr, Deputado Estadual da Bahia.</h5>
-                                    <br>
-                                    <p>"Se eu pudesse destacar a maior virtude da Numen Data  diria que é a seriedade"</p>
-                                    <br>      
+                                          <h5 class="text-secondary">Angelo Almeida, Deputado Estadual da Bahia.</h5>
+                                          <br>
+                                          <p>"Fiz dezenas de pesquisas nas eleições de 2020 com a Numen Data e me surpreendi com a capacidade de associar qualidade com preços baixos." </p>
                                     </div>
                               </div>
                         </div>
                         <div class="col-lg-4">
                               <div class="card-service">
-                                    
+                                    <div class="body">
+                                          <h5 class="text-secondary">Antônio Henrique Jr, Deputado Estadual da Bahia.</h5>
+                                          <br>
+                                          <p>"Se eu pudesse destacar a maior virtude da Numen Data  diria que é a seriedade"</p>
+                                          <br><br>     
+                                    </div>
+                              </div>
+                        </div>
+                        <div class="col-lg-4">
+                              <div class="card-service">
                                     <div class="body">
                                           <h5 class="text-secondary">Charles Fernandes, Deputado Federal.</h5>
+                                          <br>
                                           <p>"Desde 2018 temos uma parceria em pesquisas eleitorais presenciais e não fiquei surpreso com a nona posição nacional em nível de precisão em pesquisas eleitorais"</p>
                                     </div>
                               </div>
@@ -136,9 +465,8 @@
                   </div>
             </div> 
       </div>
-
-      <!-- Box valor -->
-      <section class="box-testimonial">
+      <!-- Oferta -->
+      <section class="oferta">
             <h1>A PARTIR DE 2.500 MIL REAIS</h1>
             <h6>
                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check2" viewBox="0 0 16 16">
@@ -147,7 +475,7 @@
                   São 600 entrevistas, com margem de erro de 4%
             </h6>
             <h6>
-                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check2" viewBox="0 0 16 16">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check2" viewBox="0 0 16 16">
                   <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
                   </svg>
                   São 5 perguntas, 3 obrigatórias (idade, sexo e escolaridade) e 2 por escolha do cliente.
@@ -162,26 +490,24 @@
             <div class="col-two-buttons">
                   <a class="text-button"  href="https://api.whatsapp.com/send?phone=557193003009"
                   target="_blank">
-                        <button type="button" class="btn btn-info testimonial-btn1">
+                        <button type="button" class="btn btn-info oferta-btn1">
                               QUERO UMA PESQUISA
                         </button>
                   </a>
                   <a class="text-button"  href="https://api.whatsapp.com/send?phone=557193003009"
                   target="_blank">
-                  <button type="button" class="btn btn-info testimonial-btn2">
+                  <button type="button" class="btn btn-info oferta-btn2">
                         MAIS INFORMAÇÕES
                         
                   </button>
             </a>
-      </div>
-      </section>
-
-   
+      
+      </section> 
       <!-- footer -->
       <div class=" container-footer">
             <footer class="d-flex flex-wrap justify-content-between align-items-center py-3  border-top footer-edit">
                   <div class="footer-logo">
-                        <img class="logo-rodape" src="static/media/SER USADO/1-07.png" alt="logo-rodape">
+                        <img class="logo-rodape" src="static/media/1-07.png" alt="logo-rodape">
                   </div>
                   <p class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none footer-autor">
                         <br>
@@ -189,22 +515,20 @@
                         <br>
                         Developed by John Rodrigues
                   </p>
+                  <ul class="nav col-md-4 justify-content-end icons footer-icons">
                         
-                        <ul class="nav col-md-4 justify-content-end icons footer-icons">
-                              
-                              <a href="https://www.facebook.com/numendataPC">   
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
-                                          <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
-                                    </svg>
-                              </a>
-                              
-                              <a href="https://instagram.com/numendatapc?utm_medium=copy_link">
-                                    <svg class="insta" xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
-                                          <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
-                                    </svg>
-                              </a>
-                              <a  href="https://api.whatsapp.com/send?phone=557193003009"
-                              target="_blank">
+                        <a href="https://www.facebook.com/numendataPC">   
+                              <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                                    <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+                              </svg>
+                        </a>
+                        <a href="https://instagram.com/numendatapc?utm_medium=copy_link">
+                              <svg class="insta" xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                                    <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+                              </svg>
+                        </a>
+                        <a  href="https://api.whatsapp.com/send?phone=557193003009"
+                        target="_blank">
                               <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
                                     <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"/>
                               </svg>
