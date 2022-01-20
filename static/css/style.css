@@ -1,3 +1,36 @@
+  /*Estilo geral da fonte*/
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');            /* box principal */
+  /*Estilo geral*/
+  *{
+        box-sizing: border-box;
+  }
+  body{
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        background-color: #eeeeee3f;
+        font-family: 'Montserrat',
+        sans-serif; 
+  }
+  /*Estilo do header*/
+  .navbar{
+        margin: 0;
+        padding: 0; 
+  }
+  .container-fluid {
+        background: rgb(2, 0, 36);
+        background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(187, 210, 192, 1) 100%);
+        height: 140px;   
+  }
+  .logo{
+        width: 150px;
+        margin: 0 0 0 100px ;
+        padding: 0;
+  }
+
 /* buttons */
 .col-two-buttons{
       margin-top: 20px;
@@ -99,11 +132,23 @@
       background: #1D1D1D;
       padding: 0 100px;     
 }
+
+
+
+
+
 .footer-logo{
       width: 33.3%;
 }
 .logo-rodape {
       width: 200px;
+}
+.footer-edit{
+
+
+
+
+
 }
 .footer-edit p{
       text-align: center;
@@ -133,3 +178,364 @@
       display: none;
 }
 
+
+  /* Box principal */
+  .box-principal{
+        height: 100%;
+        background: #eeeeee3f;
+        margin: 0;
+        padding: 0;
+  }
+  /* Box coluna da ,esquerda */
+  .fadeInUp h1{
+        font-family: 'Montserrat',sans-serif; 
+        text-align: left;
+        margin: 0;
+        padding: 0;
+        font-weight: 700;
+        font-size: 45px;
+        color: rgba(0, 0, 0, 0.63);
+  }
+  .fadeInUp h6{
+        margin-top: 80px;
+        font-weight: 700;
+  }
+  /* box louro */
+  .box-louro{
+        text-align: center;
+  }
+  .box-louro img{
+        width: 80px;
+        height: 200px;
+        vertical-align: top;
+        display: inline-block;  
+  }
+  .bloco-text-louro{
+        display: inline-block;
+  }
+  .bloco-text-louro p{
+     text-align: center;
+     width: 350px;
+     height: 160px;
+     margin-top: 40px;
+     font-size: 18px;
+  }
+  .video-louro{
+        width: 100%;  
+  }
+  .mobile-louro{
+        display: none;
+  }
+/* --------------------------------------------------------------------------- */
+  /* Metodos */
+  .method{
+        height: 100%;
+        padding-bottom: 0;
+  }
+  .methodInUp{
+        height: 80vh;
+  }
+  .methodInUp > .col .h1{
+        font-size: 16px;
+        color: rgb(255, 255, 255);
+  }
+  .methodInRight{
+
+        height: 80vh;
+  }
+  .col-one-method h1{
+        color: rgb(255, 255, 255);
+        font-size: 43px;
+        margin-top: 80px;
+        margin-bottom: 20px;
+  }
+  .col-one-method p{
+        color: rgb(255, 255, 255);
+  }
+/* --------------------------------------------------------------------------- */
+  /* Depoimentos */
+  .depoimentos{
+        height: 100%;
+        padding-top: 50px;
+        padding-bottom: 200px;
+        
+  }
+  .depoimentos h1{
+        margin:  60px  60px ;
+        padding-top: 0;
+        font-weight: 700;
+        font-size: 50px;
+  }
+/* --------------------------------------------------------------------------- */
+  /* <!-- Oferta --> */
+  .oferta{
+        height: 100%;
+        padding-bottom: 100px;
+        
+  }
+  .oferta h1{
+        margin:  60px 60px ;
+        padding-top: 0;
+        font-weight: 700;
+        font-size: 50px;
+        margin-bottom: 60px;
+  }
+  .oferta h6{
+        margin-bottom: 40px;
+  }
+
+  @media only screen and (max-width: 1200px) {
+        /* Box principal */
+        .bloco-text-louro p{
+              text-align: center;
+              width: 280px;
+              height: 160px;
+              margin-top: 40px;
+              font-size: 15px;
+        }
+        /* Metódos */
+        .col-one-method h1{
+              color: white;
+              font-size: 30px;
+              margin-top: 80px;
+              margin-bottom: 20px;
+        }
+  }
+  @media only screen and (max-width: 992px) {
+        /* Box principal */
+        .mobile-louro{
+              display: block;
+              height: 180px;
+        }
+        .desktop-box-louro{
+            display: none;  
+        }
+        .br{
+              display: none;
+        }
+        .fadeInUp{
+              margin: 0;
+              padding: 0;
+        }
+        .fadeInUp h1{
+              text-align: center;
+              font-size: 30px;
+        }
+        .fadeInUp h6{
+              text-align: center;
+              margin-top: 20px;
+              padding: 0;
+        }
+        /* Metódos */
+        .page-section {
+              padding-top: 0;
+              padding-bottom: 0;
+        }
+        .methodInUp{  
+              height: 50%;
+        }
+        .methodInRight{
+              height: 5%!important;
+              text-align: center;
+            
+        }
+        .methodInRight img{
+              width: 60%;    
+        }
+  
+        .depoimentos{
+        height: 100%;
+        }
+        .depoimentos h1{
+              margin:  50px 0 20px 0;
+        
+              font-size: 40px;
+        }
+        /* Ofertas */
+              .oferta h1{
+              margin:  60px 60px ;
+              padding-top: 0;
+              font-weight: 700;
+              font-size: 40px;
+              margin-bottom: 60px;
+        }
+        .oferta h6{
+              text-align: left;
+              margin: 20px;
+        }
+        .container-footer > .dflex{
+            flex-direction: column;
+            flex-wrap: wrap;
+            align-content: stretch;
+
+      }
+      .footer-edit{
+            flex-direction: column!important;
+      }
+      .justify-content-end {
+            -ms-flex-pack: end !important;
+            justify-content: center!important;
+      }
+      .footer-edit{
+            display: none!important;
+      }
+      .footer-mobile{
+            text-align: center;
+      }
+      .footer-icons-mobile{
+            justify-content: center;
+      }
+      .footer-logo{
+            width: 100%;
+      }
+
+
+  }
+  @media only screen and (max-width: 720px){
+        .oferta-btn1{
+              margin: 20px;
+        }
+        .oferta h1{
+            font-size: 30px!important;
+      }
+  }
+  @media only screen and (max-width: 527px) {
+        /* Box principal */
+        .col-two-buttons{
+              text-align: center;
+              width: 100%;
+              align-items: center;
+        }
+        .btn1,.btn2{
+              padding: 0;
+              margin: 0;
+              width: 80%;
+              margin-bottom: 10px;
+        }
+        .container-footer {
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            align-items: center;
+      }
+      .ofertas h1{
+            font-size: 25px;
+      }
+
+  }
+  @media only screen and (max-width: 474px) {
+
+        /* Box principal */
+        .box-louro{
+              text-align: center;
+              height: 150px;
+        }
+        .box-louro img{
+              width: 70px;
+              height: 180px;
+              vertical-align: top;
+              display: inline-block;     
+        }
+        .bloco-text-louro{
+              display: inline-block;
+        }
+        .bloco-text-louro p{
+        text-align: center;
+        width: 210px;
+        height: 160px;
+        margin-top: 40px;
+        font-size: 12px;
+        }
+        .fadeInUp h1{
+              text-align: center;
+              font-size: 25px;
+        }
+
+        .oferta-btn1,.oferta-btn2{
+              width: 85%;
+        }
+        .footer-mobile{
+              color: white;
+            
+        }
+        .email-pc{
+              margin: 0;
+        }
+        .container-footer{
+              padding: 20px 0;
+              background: #1D1D1D;
+        }
+        .oferta h1{
+              font-size: 25px!important;
+        }
+ 
+  }
+  @media only screen and (max-width: 386px){
+  .container-footer {
+      margin: 0;
+      padding: 0;
+  }
+}
+  @media only screen and (max-width: 386px){
+        /* Box principal */
+        .box-louro{
+              text-align: center;
+              height: 150px;
+        }
+        .box-louro img{
+              width: 60px;
+              height: 150px;
+              vertical-align: top;
+              display: inline-block;   
+        }
+        .bloco-text-louro{
+              display: inline-block;
+        }
+        .bloco-text-louro p{
+              text-align: center;
+              width: 210px;
+              height: 160px;
+              margin-top: 40px;
+              font-size: 11px;
+        }
+        .fadeInUp h1{
+              text-align: center;
+              font-size: 18px;
+        }
+   
+  }
+  @media only screen and (max-width: 386px){
+  /* Box principal */
+  .box-louro{
+        text-align: center;
+        height: 140px;
+  }
+  .box-louro img{
+        width: 50px;
+        height: 140px;
+        vertical-align: top;
+        display: inline-block;    
+  }
+  .fadeInUp h1{
+        text-align: center;
+        font-size: 18px;
+  }
+  .fadeInUp h6{
+        text-align: center;
+        font-size: 14px;
+  }
+  .bloco-text-louro p{
+        text-align: center;
+        width: 180px;
+        height: 160px;
+        margin-top: 30px;
+        font-size: 10px;
+        }
+  }
+  @media only screen and (max-width: 314px){
+        /* Box principal */
+        .box-louro{
+              display: none;
+        }
+  }
+        
